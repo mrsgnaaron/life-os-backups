@@ -1,7 +1,7 @@
 {
   "app": "life-os",
   "format_version": 1,
-  "exported_at": "2026-09-26T18:35:31.386Z",
+  "exported_at": "2026-09-27T15:32:28.783Z",
   "schema_migrations": [
     "0001_login_throttle.sql",
     "0002_core.sql",
@@ -12,7 +12,12 @@
     "0007_oauth.sql",
     "0008_deadline_is_end.sql",
     "0009_project_parent.sql",
-    "0010_backups.sql"
+    "0010_backups.sql",
+    "0011_hints.sql",
+    "0012_celebrations.sql",
+    "0013_done_at_restore.sql",
+    "0014_timeline.sql",
+    "0015_keep_focus_history.sql"
   ],
   "tables": {
     "projects": [
@@ -23,14 +28,15 @@
         "description": "One self-study plan feeding ICFC, CFA-level foundations and internship interviews. For each topic: full understanding, then application, then free recall and the Feynman method.",
         "area": "career",
         "ongoing": true,
-        "status": "paused",
+        "status": "archived",
         "priority": "medium",
         "deadline": null,
         "deadline_label": null,
         "created_at": "2026-09-26T12:12:43.238Z",
-        "updated_at": "2026-09-26T17:01:09.451Z",
+        "updated_at": "2026-09-26T19:18:05.135Z",
         "deadline_is_end": false,
-        "parent_id": null
+        "parent_id": null,
+        "done_at": null
       },
       {
         "id": "194bc141-513e-4007-88c1-923c31dda494",
@@ -46,7 +52,8 @@
         "created_at": "2026-09-26T12:37:36.113Z",
         "updated_at": "2026-09-26T14:28:38.790Z",
         "deadline_is_end": true,
-        "parent_id": null
+        "parent_id": null,
+        "done_at": null
       },
       {
         "id": "3e318f29-b5f4-4638-aaee-1da71883ace6",
@@ -62,7 +69,8 @@
         "created_at": "2026-09-26T12:14:37.262Z",
         "updated_at": "2026-09-26T17:01:11.992Z",
         "deadline_is_end": false,
-        "parent_id": null
+        "parent_id": null,
+        "done_at": null
       },
       {
         "id": "550da24b-b230-43f7-a1f9-661458bdf975",
@@ -71,14 +79,15 @@
         "description": "Inter-Collegiate Finance Competition (ICFC) is the longest-running and most prestigious academic finance competition for college students in the Philippines. \r\n\r\nTeam entry for ICFC: get registered, build the team's study plan, be case-ready by the competition.\r\n\r\nGOAL: Champion!",
         "area": "competitions",
         "ongoing": false,
-        "status": "paused",
+        "status": "active",
         "priority": "medium",
         "deadline": "2027-01-29T00:00:00.000Z",
         "deadline_label": null,
         "created_at": "2026-09-26T12:03:56.156Z",
-        "updated_at": "2026-09-26T17:55:03.561Z",
+        "updated_at": "2026-09-26T20:18:24.900Z",
         "deadline_is_end": false,
-        "parent_id": null
+        "parent_id": null,
+        "done_at": null
       },
       {
         "id": "60cd9947-adc0-43cf-b8f3-ddb68c5548b8",
@@ -94,7 +103,8 @@
         "created_at": "2026-09-26T12:36:33.323Z",
         "updated_at": "2026-09-26T14:27:00.160Z",
         "deadline_is_end": true,
-        "parent_id": null
+        "parent_id": null,
+        "done_at": null
       },
       {
         "id": "634cdbb9-b830-451a-8afc-a6c6840a81dd",
@@ -110,7 +120,8 @@
         "created_at": "2026-09-26T12:37:15.496Z",
         "updated_at": "2026-09-26T14:28:47.023Z",
         "deadline_is_end": true,
-        "parent_id": null
+        "parent_id": null,
+        "done_at": null
       },
       {
         "id": "707c738c-8fa5-4bd4-bd5e-185bf3f67fb7",
@@ -126,7 +137,8 @@
         "created_at": "2026-09-26T12:13:51.033Z",
         "updated_at": "2026-09-26T15:08:13.497Z",
         "deadline_is_end": false,
-        "parent_id": "194bc141-513e-4007-88c1-923c31dda494"
+        "parent_id": "194bc141-513e-4007-88c1-923c31dda494",
+        "done_at": null
       },
       {
         "id": "7773b615-8dbb-4bc9-b5bb-b29ac226f14a",
@@ -142,7 +154,8 @@
         "created_at": "2026-09-26T12:38:04.764Z",
         "updated_at": "2026-09-26T14:28:12.240Z",
         "deadline_is_end": true,
-        "parent_id": null
+        "parent_id": null,
+        "done_at": null
       },
       {
         "id": "7fee1bdc-8c89-41c8-8b0b-eb7782a378d4",
@@ -158,7 +171,8 @@
         "created_at": "2026-09-26T12:43:54.090Z",
         "updated_at": "2026-09-26T17:01:08.144Z",
         "deadline_is_end": false,
-        "parent_id": null
+        "parent_id": null,
+        "done_at": null
       },
       {
         "id": "a1da453f-ac68-475d-81ba-6b64d6921e08",
@@ -174,7 +188,8 @@
         "created_at": "2026-09-26T12:11:02.213Z",
         "updated_at": "2026-09-26T16:59:56.444Z",
         "deadline_is_end": false,
-        "parent_id": null
+        "parent_id": null,
+        "done_at": null
       },
       {
         "id": "b01af71c-bf83-4754-bc3c-0b3b899ce2a5",
@@ -190,7 +205,8 @@
         "created_at": "2026-09-26T12:06:06.100Z",
         "updated_at": "2026-09-26T17:01:10.821Z",
         "deadline_is_end": false,
-        "parent_id": null
+        "parent_id": null,
+        "done_at": null
       },
       {
         "id": "cd7ef434-352d-4815-905d-a8ab239e4609",
@@ -206,7 +222,8 @@
         "created_at": "2026-09-26T12:38:41.959Z",
         "updated_at": "2026-09-26T14:28:25.313Z",
         "deadline_is_end": true,
-        "parent_id": null
+        "parent_id": null,
+        "done_at": null
       },
       {
         "id": "d15e27de-dee4-4fd2-b980-429000cfde55",
@@ -222,7 +239,8 @@
         "created_at": "2026-09-26T13:16:54.164Z",
         "updated_at": "2026-09-26T15:19:12.834Z",
         "deadline_is_end": false,
-        "parent_id": "634cdbb9-b830-451a-8afc-a6c6840a81dd"
+        "parent_id": "634cdbb9-b830-451a-8afc-a6c6840a81dd",
+        "done_at": null
       },
       {
         "id": "ea4afb6c-6019-4297-a10e-fb47ae8515af",
@@ -231,14 +249,15 @@
         "description": "My JFINEX work: event videos and the branding and marketing overhaul.",
         "area": "org",
         "ongoing": true,
-        "status": "paused",
+        "status": "active",
         "priority": "medium",
         "deadline": null,
         "deadline_label": null,
         "created_at": "2026-09-26T12:13:21.162Z",
-        "updated_at": "2026-09-26T17:01:06.862Z",
+        "updated_at": "2026-09-26T20:18:29.339Z",
         "deadline_is_end": false,
-        "parent_id": null
+        "parent_id": null,
+        "done_at": null
       }
     ],
     "steps": [
@@ -255,6 +274,20 @@
         "done_at": null,
         "created_at": "2026-09-26T12:17:06.897Z",
         "last_touched_at": "2026-09-26T12:17:06.897Z"
+      },
+      {
+        "id": "05e2341d-a563-4de9-adcd-95ab98da6990",
+        "project_id": "707c738c-8fa5-4bd4-bd5e-185bf3f67fb7",
+        "title": "Finish evidence gathering for Sections 5 & 6 specifically",
+        "notes": "",
+        "position": 1,
+        "due_date": "2026-09-28T00:00:00.000Z",
+        "starter": null,
+        "left_off": null,
+        "done": false,
+        "done_at": null,
+        "created_at": "2026-09-27T15:03:05.623Z",
+        "last_touched_at": "2026-09-27T15:06:56.682Z"
       },
       {
         "id": "14ac3edb-1594-4514-a792-fd4c0bd0db2c",
@@ -306,11 +339,11 @@
         "position": 1,
         "due_date": "2026-09-26T00:00:00.000Z",
         "starter": "Check docs for what is assigned",
-        "left_off": "Claude is drafting the work; reached usage limit",
-        "done": false,
-        "done_at": null,
+        "left_off": null,
+        "done": true,
+        "done_at": "2026-09-26T21:58:17.459Z",
         "created_at": "2026-09-26T13:26:55.928Z",
-        "last_touched_at": "2026-09-26T17:32:43.441Z"
+        "last_touched_at": "2026-09-26T21:58:17.459Z"
       },
       {
         "id": "2a77ff0d-24ba-4c8c-9af4-c276c982148a",
@@ -363,10 +396,10 @@
         "due_date": "2026-09-27T00:00:00.000Z",
         "starter": "Go back to gc and figure out what's still left to do; video submission to google folder?",
         "left_off": null,
-        "done": false,
-        "done_at": null,
+        "done": true,
+        "done_at": "2026-09-27T12:58:46.040Z",
         "created_at": "2026-09-26T13:24:03.469Z",
-        "last_touched_at": "2026-09-26T15:18:08.232Z"
+        "last_touched_at": "2026-09-27T12:58:46.040Z"
       },
       {
         "id": "4090cdb8-ba98-4ced-af40-ba1fcee7161a",
@@ -387,14 +420,14 @@
         "project_id": "7773b615-8dbb-4bc9-b5bb-b29ac226f14a",
         "title": "Submit Academic Advising Form",
         "notes": "",
-        "position": 6,
+        "position": 8,
         "due_date": "2026-10-12T00:00:00.000Z",
         "starter": null,
         "left_off": null,
         "done": false,
         "done_at": null,
         "created_at": "2026-09-26T13:30:09.741Z",
-        "last_touched_at": "2026-09-26T13:30:14.740Z"
+        "last_touched_at": "2026-09-26T19:08:18.286Z"
       },
       {
         "id": "45f3db0c-2630-49c5-8607-b1a8afef8e8c",
@@ -429,14 +462,42 @@
         "project_id": "7773b615-8dbb-4bc9-b5bb-b29ac226f14a",
         "title": "Video Discussion: Expectations, Credibility, and Policy Communication",
         "notes": "",
-        "position": 4,
+        "position": 6,
         "due_date": "2026-10-05T00:00:00.000Z",
         "starter": null,
         "left_off": null,
         "done": false,
         "done_at": null,
         "created_at": "2026-09-26T13:27:28.025Z",
-        "last_touched_at": "2026-09-26T13:27:32.148Z"
+        "last_touched_at": "2026-09-26T19:08:16.560Z"
+      },
+      {
+        "id": "4f298bd0-4609-4b13-b3fa-1645c72ade7a",
+        "project_id": "707c738c-8fa5-4bd4-bd5e-185bf3f67fb7",
+        "title": "Paper Final Assembly",
+        "notes": "Compile full References list (APA 7, alphabetized) from all sections plus the RRL tracker\nProofread and synthesize voice/flow across sections\nFormat pass — TNR 12, double-spaced, 1-inch margins, page numbers top-right starting after title page\nRun Turnitin check (<8%) with enough buffer to actually fix flagged similarity, not the night before\nFill AI Declaration from the AI Notes log — flag to the group now to actually start logging as they go\nAttach Turnitin certificate as Appendix A\nFinal PDF export and upload",
+        "position": 12,
+        "due_date": "2026-10-05T00:00:00.000Z",
+        "starter": null,
+        "left_off": null,
+        "done": false,
+        "done_at": null,
+        "created_at": "2026-09-27T15:05:38.873Z",
+        "last_touched_at": "2026-09-27T15:06:34.332Z"
+      },
+      {
+        "id": "523b06dc-1969-4649-9c7b-8fac4704eae5",
+        "project_id": "707c738c-8fa5-4bd4-bd5e-185bf3f67fb7",
+        "title": "Pull 6-8 direct quotes from the interview transcript, tagged by section number (3.1, 3.2, 3.3, 5.4)",
+        "notes": "",
+        "position": 2,
+        "due_date": "2026-09-28T00:00:00.000Z",
+        "starter": null,
+        "left_off": null,
+        "done": false,
+        "done_at": null,
+        "created_at": "2026-09-27T15:03:42.182Z",
+        "last_touched_at": "2026-09-27T15:07:00.472Z"
       },
       {
         "id": "57bcabc7-c26a-4304-a2aa-0936e28985b3",
@@ -479,6 +540,34 @@
         "done_at": null,
         "created_at": "2026-09-26T12:16:15.765Z",
         "last_touched_at": "2026-09-26T12:16:15.765Z"
+      },
+      {
+        "id": "608da2b2-e097-412c-880b-581d6b761996",
+        "project_id": "7773b615-8dbb-4bc9-b5bb-b29ac226f14a",
+        "title": "Do Section 6.3 for Week 8",
+        "notes": "",
+        "position": 3,
+        "due_date": null,
+        "starter": null,
+        "left_off": null,
+        "done": true,
+        "done_at": "2026-09-27T11:18:09.691Z",
+        "created_at": "2026-09-27T09:59:02.077Z",
+        "last_touched_at": "2026-09-27T11:18:09.691Z"
+      },
+      {
+        "id": "64e86a4c-34b6-4d58-bd40-0c0d867769bb",
+        "project_id": "707c738c-8fa5-4bd4-bd5e-185bf3f67fb7",
+        "title": "Make progress tracker (personal only, as project manager)",
+        "notes": "",
+        "position": 5,
+        "due_date": "2026-09-28T00:00:00.000Z",
+        "starter": null,
+        "left_off": null,
+        "done": false,
+        "done_at": null,
+        "created_at": "2026-09-27T14:15:33.297Z",
+        "last_touched_at": "2026-09-27T15:07:07.527Z"
       },
       {
         "id": "6a00d0aa-790e-42cd-9619-7f28f29c55f5",
@@ -559,24 +648,24 @@
         "due_date": "2026-09-27T00:00:00.000Z",
         "starter": "Create a teams gc and disseminate notes there",
         "left_off": null,
-        "done": false,
-        "done_at": null,
+        "done": true,
+        "done_at": "2026-09-27T09:41:40.417Z",
         "created_at": "2026-09-26T13:18:49.097Z",
-        "last_touched_at": "2026-09-26T15:12:12.264Z"
+        "last_touched_at": "2026-09-27T09:41:40.417Z"
       },
       {
         "id": "7fc12c07-1f51-4903-b6a6-05c2d1927d3f",
         "project_id": "7773b615-8dbb-4bc9-b5bb-b29ac226f14a",
         "title": "CareerSprint Microcredential Completion",
         "notes": "",
-        "position": 3,
+        "position": 5,
         "due_date": "2026-09-29T00:00:00.000Z",
         "starter": null,
         "left_off": null,
         "done": false,
         "done_at": null,
         "created_at": "2026-09-26T13:29:55.722Z",
-        "last_touched_at": "2026-09-26T13:29:59.296Z"
+        "last_touched_at": "2026-09-26T19:08:15.710Z"
       },
       {
         "id": "8a2339a0-7d5e-4cb4-a498-8b29c13361a5",
@@ -587,24 +676,38 @@
         "due_date": "2026-09-27T00:00:00.000Z",
         "starter": null,
         "left_off": null,
+        "done": true,
+        "done_at": "2026-09-27T13:47:14.972Z",
+        "created_at": "2026-09-26T13:30:27.798Z",
+        "last_touched_at": "2026-09-27T13:47:14.972Z"
+      },
+      {
+        "id": "91a872d1-3e6d-434b-acf2-fa79a2841863",
+        "project_id": "707c738c-8fa5-4bd4-bd5e-185bf3f67fb7",
+        "title": "Venice: Section 3 (Company Background & Digital Media Profile), all four subsections, now that interview quotes are ready",
+        "notes": "",
+        "position": 6,
+        "due_date": "2026-10-03T00:00:00.000Z",
+        "starter": null,
+        "left_off": null,
         "done": false,
         "done_at": null,
-        "created_at": "2026-09-26T13:30:27.798Z",
-        "last_touched_at": "2026-09-26T13:30:38.781Z"
+        "created_at": "2026-09-27T15:04:30.593Z",
+        "last_touched_at": "2026-09-27T15:07:12.784Z"
       },
       {
         "id": "9c516bd8-e9cc-45de-ae63-fcee883a25b3",
         "project_id": "7773b615-8dbb-4bc9-b5bb-b29ac226f14a",
         "title": "Peer Evaluation Form",
         "notes": "",
-        "position": 2,
+        "position": 4,
         "due_date": null,
         "starter": null,
         "left_off": null,
         "done": false,
         "done_at": null,
         "created_at": "2026-09-26T17:20:38.977Z",
-        "last_touched_at": "2026-09-26T17:20:38.977Z"
+        "last_touched_at": "2026-09-26T19:08:14.975Z"
       },
       {
         "id": "a240917d-5426-4de5-bb09-95e81c18b362",
@@ -619,6 +722,20 @@
         "done_at": "2026-09-26T16:35:48.174Z",
         "created_at": "2026-09-26T13:18:35.789Z",
         "last_touched_at": "2026-09-26T16:35:48.174Z"
+      },
+      {
+        "id": "a359f381-7ee2-4a20-ae53-0e3081f537d5",
+        "project_id": "707c738c-8fa5-4bd4-bd5e-185bf3f67fb7",
+        "title": "Jannus + Venice: Section 6 (Risk, Ethics & Commercial Dynamics)",
+        "notes": "",
+        "position": 8,
+        "due_date": "2026-10-03T00:00:00.000Z",
+        "starter": null,
+        "left_off": null,
+        "done": false,
+        "done_at": null,
+        "created_at": "2026-09-27T15:04:43.785Z",
+        "last_touched_at": "2026-09-27T15:07:20.513Z"
       },
       {
         "id": "a42a44da-b1c4-4055-8c99-81f1b1a9ab19",
@@ -649,6 +766,20 @@
         "last_touched_at": "2026-09-26T13:30:58.840Z"
       },
       {
+        "id": "b8812bab-a1f5-4090-a5c8-54b75b535ad5",
+        "project_id": "707c738c-8fa5-4bd4-bd5e-185bf3f67fb7",
+        "title": "Aaron + Jannus: Section 5 (Platform & Algorithmic Audit), now unblocked since interview data is in hand",
+        "notes": "",
+        "position": 7,
+        "due_date": "2026-10-03T00:00:00.000Z",
+        "starter": null,
+        "left_off": null,
+        "done": false,
+        "done_at": null,
+        "created_at": "2026-09-27T15:04:38.497Z",
+        "last_touched_at": "2026-09-27T15:07:16.802Z"
+      },
+      {
         "id": "ba636dea-15ac-46dc-8678-a5f54e0c1402",
         "project_id": "634cdbb9-b830-451a-8afc-a6c6840a81dd",
         "title": "Study for final exam",
@@ -677,6 +808,34 @@
         "last_touched_at": "2026-09-26T13:26:03.415Z"
       },
       {
+        "id": "bd987cc4-6f91-43ae-9cb3-f5c55111918f",
+        "project_id": "707c738c-8fa5-4bd4-bd5e-185bf3f67fb7",
+        "title": "Mirelle: paste RRL synthesis into Section 4",
+        "notes": "",
+        "position": 9,
+        "due_date": "2026-10-03T00:00:00.000Z",
+        "starter": null,
+        "left_off": null,
+        "done": false,
+        "done_at": null,
+        "created_at": "2026-09-27T15:04:51.322Z",
+        "last_touched_at": "2026-09-27T15:07:23.248Z"
+      },
+      {
+        "id": "c449fca8-7a96-463c-85e9-e33f15a39617",
+        "project_id": "707c738c-8fa5-4bd4-bd5e-185bf3f67fb7",
+        "title": "Mirelle: Section 7 (Strategic Recommendations)",
+        "notes": "",
+        "position": 10,
+        "due_date": "2026-10-03T00:00:00.000Z",
+        "starter": null,
+        "left_off": null,
+        "done": false,
+        "done_at": null,
+        "created_at": "2026-09-27T15:04:58.663Z",
+        "last_touched_at": "2026-09-27T15:07:26.192Z"
+      },
+      {
         "id": "c60affef-049e-4d56-b6d1-b11a10b3f846",
         "project_id": "b01af71c-bf83-4754-bc3c-0b3b899ce2a5",
         "title": "Confirm deadline for summer internship applications",
@@ -689,6 +848,34 @@
         "done_at": null,
         "created_at": "2026-09-26T12:15:58.654Z",
         "last_touched_at": "2026-09-26T12:15:58.654Z"
+      },
+      {
+        "id": "f25c12f5-b1e4-4f76-9e57-ed2907fed5a8",
+        "project_id": "707c738c-8fa5-4bd4-bd5e-185bf3f67fb7",
+        "title": "Venice: Executive Summary",
+        "notes": "",
+        "position": 11,
+        "due_date": "2026-10-03T00:00:00.000Z",
+        "starter": null,
+        "left_off": null,
+        "done": false,
+        "done_at": null,
+        "created_at": "2026-09-27T15:05:04.106Z",
+        "last_touched_at": "2026-09-27T15:07:31.067Z"
+      },
+      {
+        "id": "f58b7b6c-8e9d-4bff-9f66-28cfda32a927",
+        "project_id": "707c738c-8fa5-4bd4-bd5e-185bf3f67fb7",
+        "title": "Lightly check on groupmates for updates on their work",
+        "notes": "",
+        "position": 4,
+        "due_date": "2026-09-28T00:00:00.000Z",
+        "starter": null,
+        "left_off": null,
+        "done": false,
+        "done_at": null,
+        "created_at": "2026-09-27T14:17:04.150Z",
+        "last_touched_at": "2026-09-27T15:07:03.843Z"
       },
       {
         "id": "f66d59ae-2312-4437-8cd8-464a043bbd35",
@@ -709,17 +896,55 @@
         "project_id": "7773b615-8dbb-4bc9-b5bb-b29ac226f14a",
         "title": "Individual BSP Monetary Analysis Paper",
         "notes": "",
-        "position": 5,
+        "position": 7,
         "due_date": "2026-10-12T00:00:00.000Z",
         "starter": "Read the guidelines",
         "left_off": null,
         "done": false,
         "done_at": null,
         "created_at": "2026-09-26T13:29:06.616Z",
-        "last_touched_at": "2026-09-26T13:29:44.443Z"
+        "last_touched_at": "2026-09-26T19:08:17.185Z"
+      },
+      {
+        "id": "f9fadb81-f139-4956-9d21-b4ef527f6de2",
+        "project_id": "7773b615-8dbb-4bc9-b5bb-b29ac226f14a",
+        "title": "Update group that section 3 rewrite is done but still waiting on Blue for section 6.1 to get started on assigned 6.3",
+        "notes": "",
+        "position": 2,
+        "due_date": "2026-09-27T00:00:00.000Z",
+        "starter": null,
+        "left_off": null,
+        "done": true,
+        "done_at": "2026-09-27T09:34:43.640Z",
+        "created_at": "2026-09-26T22:01:47.323Z",
+        "last_touched_at": "2026-09-27T09:34:43.640Z"
       }
     ],
     "items": [
+      {
+        "id": "04510360-e9f4-4237-a4de-62554323e03a",
+        "text": "Trim nails",
+        "notes": "",
+        "bucket": "chore",
+        "due_date": null,
+        "done": false,
+        "done_at": null,
+        "created_at": "2026-09-27T15:08:16.838Z",
+        "last_touched_at": "2026-09-27T15:08:35.469Z",
+        "left_off": null
+      },
+      {
+        "id": "12ed4356-a942-49c8-8602-3739d29b32a8",
+        "text": "Buy watsons before leaving for Manila or in Manila!",
+        "notes": "",
+        "bucket": "task",
+        "due_date": null,
+        "done": false,
+        "done_at": null,
+        "created_at": "2026-09-27T15:08:27.473Z",
+        "last_touched_at": "2026-09-27T15:08:36.604Z",
+        "left_off": null
+      },
       {
         "id": "1830edc3-c031-49a3-acfa-55c97834e078",
         "text": "Financials plan (budgetting and tracking)",
@@ -766,6 +991,18 @@
         "done_at": null,
         "created_at": "2026-09-26T10:51:08.120Z",
         "last_touched_at": "2026-09-26T12:17:29.641Z",
+        "left_off": null
+      },
+      {
+        "id": "97f27b41-6200-43b4-b842-87fd51eed8f5",
+        "text": "Populate BeFit Audit Paper steps + BAFP101 Paper steps",
+        "notes": "",
+        "bucket": "task",
+        "due_date": "2026-09-27T00:00:00.000Z",
+        "done": false,
+        "done_at": null,
+        "created_at": "2026-09-26T20:17:35.772Z",
+        "last_touched_at": "2026-09-27T13:47:28.306Z",
         "left_off": null
       },
       {
@@ -855,25 +1092,84 @@
     ],
     "daily_picks": [
       {
+        "id": "045cfc5d-764c-461c-b682-cfffeed84fe3",
+        "date": "2026-09-27T00:00:00.000Z",
+        "ref_type": "step",
+        "ref_id": "8a2339a0-7d5e-4cb4-a498-8b29c13361a5",
+        "slot_order": 3,
+        "created_at": null
+      },
+      {
+        "id": "2b0b543e-2b24-49c6-97d0-4fb7c9b5e9ec",
+        "date": "2026-09-27T00:00:00.000Z",
+        "ref_type": "step",
+        "ref_id": "29aa64de-6a50-4a7b-b0ee-4d0568cfbeff",
+        "slot_order": 1,
+        "created_at": null
+      },
+      {
         "id": "4923208c-17a0-4c50-9253-42943d34ffd6",
         "date": "2026-09-26T00:00:00.000Z",
         "ref_type": "step",
         "ref_id": "3e17380e-4fad-4fbe-9207-e0f987bd7983",
-        "slot_order": 3
+        "slot_order": 3,
+        "created_at": null
       },
       {
         "id": "72498f40-0ae9-45c2-a65c-55a734c6e4eb",
         "date": "2026-09-26T00:00:00.000Z",
         "ref_type": "step",
         "ref_id": "a240917d-5426-4de5-bb09-95e81c18b362",
-        "slot_order": 1
+        "slot_order": 1,
+        "created_at": null
+      },
+      {
+        "id": "77bb1605-1419-4b6a-bc7e-8210e224fc51",
+        "date": "2026-09-27T00:00:00.000Z",
+        "ref_type": "step",
+        "ref_id": "3e17380e-4fad-4fbe-9207-e0f987bd7983",
+        "slot_order": 4,
+        "created_at": null
+      },
+      {
+        "id": "7debcd16-eccf-42fd-a58a-ec6888fdf984",
+        "date": "2026-09-27T00:00:00.000Z",
+        "ref_type": "item",
+        "ref_id": "97f27b41-6200-43b4-b842-87fd51eed8f5",
+        "slot_order": 6,
+        "created_at": null
       },
       {
         "id": "b13b987b-0654-4326-b14e-c204b7bf79f2",
         "date": "2026-09-26T00:00:00.000Z",
         "ref_type": "step",
         "ref_id": "29aa64de-6a50-4a7b-b0ee-4d0568cfbeff",
-        "slot_order": 2
+        "slot_order": 2,
+        "created_at": null
+      },
+      {
+        "id": "be4dfb42-320f-48bc-8d37-38bfc6831d77",
+        "date": "2026-09-27T00:00:00.000Z",
+        "ref_type": "step",
+        "ref_id": "7a5b6aed-499a-43b0-8d45-d0b3ec68a211",
+        "slot_order": 2,
+        "created_at": null
+      },
+      {
+        "id": "c2508568-c186-4795-bd98-a920cc92cdb9",
+        "date": "2026-09-27T00:00:00.000Z",
+        "ref_type": "step",
+        "ref_id": "f9fadb81-f139-4956-9d21-b4ef527f6de2",
+        "slot_order": 5,
+        "created_at": null
+      },
+      {
+        "id": "c94a52e8-523e-4862-af29-4541eaf2b295",
+        "date": "2026-09-27T00:00:00.000Z",
+        "ref_type": "step",
+        "ref_id": "608da2b2-e097-412c-880b-581d6b761996",
+        "slot_order": 7,
+        "created_at": null
       }
     ],
     "focus_sessions": [
@@ -882,35 +1178,156 @@
         "ref_type": "step",
         "ref_id": "a240917d-5426-4de5-bb09-95e81c18b362",
         "started_at": "2026-09-26T15:19:53.727Z",
-        "ended_at": "2026-09-26T15:20:05.178Z"
+        "ended_at": "2026-09-26T15:20:05.178Z",
+        "ref_title": "Finalize and format notes",
+        "project_id": "634cdbb9-b830-451a-8afc-a6c6840a81dd",
+        "project_name": "BAFP101 - Financial Management",
+        "area": "academics",
+        "bucket": null,
+        "ref_deleted_at": null
       },
       {
         "id": "0f868a74-dc37-4ffe-a369-813594aab6ea",
         "ref_type": "step",
         "ref_id": "a240917d-5426-4de5-bb09-95e81c18b362",
         "started_at": "2026-09-26T15:18:18.806Z",
-        "ended_at": "2026-09-26T15:18:41.999Z"
+        "ended_at": "2026-09-26T15:18:41.999Z",
+        "ref_title": "Finalize and format notes",
+        "project_id": "634cdbb9-b830-451a-8afc-a6c6840a81dd",
+        "project_name": "BAFP101 - Financial Management",
+        "area": "academics",
+        "bucket": null,
+        "ref_deleted_at": null
+      },
+      {
+        "id": "3ad3e8a5-6e0e-45dd-9184-144f20cba53c",
+        "ref_type": "step",
+        "ref_id": "608da2b2-e097-412c-880b-581d6b761996",
+        "started_at": "2026-09-27T10:24:11.576Z",
+        "ended_at": "2026-09-27T11:18:09.551Z",
+        "ref_title": "Do Section 6.3 for Week 8",
+        "project_id": "7773b615-8dbb-4bc9-b5bb-b29ac226f14a",
+        "project_name": "BAFP105 - Monetary Policy and Central Banking",
+        "area": "academics",
+        "bucket": null,
+        "ref_deleted_at": null
       },
       {
         "id": "3b2394df-7372-4168-8a0a-2c0a00fcd273",
         "ref_type": "step",
         "ref_id": "3e17380e-4fad-4fbe-9207-e0f987bd7983",
         "started_at": "2026-09-26T14:26:23.387Z",
-        "ended_at": "2026-09-26T14:26:25.191Z"
+        "ended_at": "2026-09-26T14:26:25.191Z",
+        "ref_title": "Learn and Tell Group Submission",
+        "project_id": "60cd9947-adc0-43cf-b8f3-ddb68c5548b8",
+        "project_name": "BACCT101 - Financial Accounting and Reporting",
+        "area": "academics",
+        "bucket": null,
+        "ref_deleted_at": null
+      },
+      {
+        "id": "427906c2-0992-4e06-a1c5-d5177a7f09fb",
+        "ref_type": "step",
+        "ref_id": "29aa64de-6a50-4a7b-b0ee-4d0568cfbeff",
+        "started_at": "2026-09-26T21:17:54.603Z",
+        "ended_at": "2026-09-26T21:58:17.359Z",
+        "ref_title": "Do assigned group work for week 8 final portfolio",
+        "project_id": "7773b615-8dbb-4bc9-b5bb-b29ac226f14a",
+        "project_name": "BAFP105 - Monetary Policy and Central Banking",
+        "area": "academics",
+        "bucket": null,
+        "ref_deleted_at": null
       },
       {
         "id": "481f0168-3382-4342-918c-518b2b641d03",
         "ref_type": "step",
         "ref_id": "a240917d-5426-4de5-bb09-95e81c18b362",
         "started_at": "2026-09-26T15:33:51.195Z",
-        "ended_at": "2026-09-26T16:35:48.061Z"
+        "ended_at": "2026-09-26T16:35:48.061Z",
+        "ref_title": "Finalize and format notes",
+        "project_id": "634cdbb9-b830-451a-8afc-a6c6840a81dd",
+        "project_name": "BAFP101 - Financial Management",
+        "area": "academics",
+        "bucket": null,
+        "ref_deleted_at": null
+      },
+      {
+        "id": "57eec705-ef80-40a9-bc02-18b06c229233",
+        "ref_type": "step",
+        "ref_id": "3e17380e-4fad-4fbe-9207-e0f987bd7983",
+        "started_at": "2026-09-27T09:53:41.193Z",
+        "ended_at": "2026-09-27T09:53:45.872Z",
+        "ref_title": "Learn and Tell Group Submission",
+        "project_id": "60cd9947-adc0-43cf-b8f3-ddb68c5548b8",
+        "project_name": "BACCT101 - Financial Accounting and Reporting",
+        "area": "academics",
+        "bucket": null,
+        "ref_deleted_at": null
+      },
+      {
+        "id": "5852a73c-c184-4513-a96a-b8cab7d9e9b1",
+        "ref_type": "step",
+        "ref_id": "8a2339a0-7d5e-4cb4-a498-8b29c13361a5",
+        "started_at": "2026-09-27T13:46:58.751Z",
+        "ended_at": "2026-09-27T13:47:01.628Z",
+        "ref_title": "Learning Task 1",
+        "project_id": "cd7ef434-352d-4815-905d-a8ab239e4609",
+        "project_name": "CIS315 - Introduction to Business Data Analytics",
+        "area": "academics",
+        "bucket": null,
+        "ref_deleted_at": null
+      },
+      {
+        "id": "59675ebe-fee2-4234-88c8-7d52df6ab983",
+        "ref_type": "item",
+        "ref_id": "97f27b41-6200-43b4-b842-87fd51eed8f5",
+        "started_at": "2026-09-27T13:47:28.296Z",
+        "ended_at": null,
+        "ref_title": "Populate BeFit Audit Paper steps + BAFP101 Paper steps",
+        "project_id": null,
+        "project_name": null,
+        "area": null,
+        "bucket": "task",
+        "ref_deleted_at": null
+      },
+      {
+        "id": "c1885e35-b6e4-4043-b5a5-78e6ac9d8631",
+        "ref_type": "step",
+        "ref_id": "3e17380e-4fad-4fbe-9207-e0f987bd7983",
+        "started_at": "2026-09-27T11:41:23.089Z",
+        "ended_at": "2026-09-27T12:58:45.915Z",
+        "ref_title": "Learn and Tell Group Submission",
+        "project_id": "60cd9947-adc0-43cf-b8f3-ddb68c5548b8",
+        "project_name": "BACCT101 - Financial Accounting and Reporting",
+        "area": "academics",
+        "bucket": null,
+        "ref_deleted_at": null
       },
       {
         "id": "d3d7d89c-84c6-4213-bea5-ce553b6824e4",
         "ref_type": "step",
         "ref_id": "29aa64de-6a50-4a7b-b0ee-4d0568cfbeff",
         "started_at": "2026-09-26T17:16:00.548Z",
-        "ended_at": "2026-09-26T17:32:43.344Z"
+        "ended_at": "2026-09-26T17:32:43.344Z",
+        "ref_title": "Do assigned group work for week 8 final portfolio",
+        "project_id": "7773b615-8dbb-4bc9-b5bb-b29ac226f14a",
+        "project_name": "BAFP105 - Monetary Policy and Central Banking",
+        "area": "academics",
+        "bucket": null,
+        "ref_deleted_at": null
+      },
+      {
+        "id": "fac27bb5-f4ef-4ea0-9b47-26c90659c95c",
+        "ref_type": "step",
+        "ref_id": "608da2b2-e097-412c-880b-581d6b761996",
+        "started_at": "2026-09-27T09:59:07.031Z",
+        "ended_at": "2026-09-27T10:08:09.629Z",
+        "ref_title": "Do Section 6.3 for Week 8",
+        "project_id": "7773b615-8dbb-4bc9-b5bb-b29ac226f14a",
+        "project_name": "BAFP105 - Monetary Policy and Central Banking",
+        "area": "academics",
+        "bucket": null,
+        "ref_deleted_at": null
       }
     ],
     "habits": [
@@ -966,7 +1383,11 @@
         "day_rollover": "03:00:00",
         "streak_threshold": 4,
         "calendar_cache_minutes": 2,
-        "focus_stale_hours": 3
+        "focus_stale_hours": 3,
+        "hints_off": [
+          "pileup"
+        ],
+        "celebrations": true
       }
     ]
   }
